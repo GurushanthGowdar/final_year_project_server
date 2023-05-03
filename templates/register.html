@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>|Register</title>
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	<link href="/static/css/style.css" rel="stylesheet">
+	<style>
+		.error_mail{
+		color:red;
+		}
+body{
+position:fixed;
+}
+      .img{
+ opacity: 0.9;
+ position: absolute;
+  width: 103%;
+  height:100%;
+}
+.content{
+width:100%;
+height:80vh;}
+
+.body{
+height:90%;
+}
+
+.card{
+height:100%;
+background:light green;
+position:relative;
+left:25%;
+}
+
+
+	</style>
+</head>
+<body>
+<div class="body" >
+             <img class="img" src="static/bg3.jpg">
+                <div class="last">
+<!--                   <h1 class="tuber">RESPONSIVE IDS</h1>-->
+                    <br><br><br><br><br><br><br>
+
+<center>
+	<div class="content">
+<div class="container">
+
+<div class="row justify">
+<div class="col-sm-8">
+<div class="card">
+<header class="card-header">
+	<a href="/" class="float-right btn btn-outline-primary mt-1">Log in</a>
+	<h4 class="card-title mt-2">Sign up</h4>
+</header>
+<article class="card-body">
+<form method="post">
+	<div class="form-row">
+		<div class="col form-group">
+			<label>Name </label>
+		  	<input type="text" class="form-control" required name="name" placeholder="Enter your name">
+		</div> <!-- form-group end.// -->
+	</div> <!-- form-row end.// -->
+	<div class="form-group">
+		<label>Email address</label>
+		<input type="email" class="form-control" required name="Email" placeholder="Enter your emial id">
+		<h5 class="error_mail">{{msg}}</h5>
+	</div> <!-- form-group end.// -->
+
+	<div class="form-group">
+		<label>Create password</label>
+	    <input class="form-control" name="Password" required type="password">
+	</div> <!-- form-group end.// -->
+    <div class="form-group">
+        <button type="submit" class=" btn-primary btn-block"> Register  </button>
+    </div> <!-- form-group// -->
+
+</form>
+</article> <!-- card-body end .// -->
+
+</div> <!-- col.//-->
+
+</div> <!-- row.//-->
+
+
+</div>
+	</div>
+</div>
+	</center>
+</div>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</div>
+</body>
+</html>
